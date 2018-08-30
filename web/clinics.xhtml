@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="Normalize.css"/>
+        <h:outputStylesheet library="css" name="indexcss.css"/>
+        <h:outputStylesheet library="css" name="clinic-css.css"/>
+        <h:outputScript library="js" name="index-js.js"/>
+    </h:head>
+    <h:body>
+
+        <wrapper class="wrap">
+            <header class="header-top">
+                <div class="menu-icon">
+                    <a href="../index.html"><img src="resources/images/insurance/menu.png"  alt=""/></a>
+                </div>
+                <div class="logo">
+                    <a href="../index.html"><img src="resources/images/insurance/dark-logo-for-site.png" alt="Logo image"/></a>
+                </div>
+
+                <div class="search-box">
+                    <form class="form-style">
+                        <input type="text" placeholder="Search by name or service" name="search"/>
+                        <input type="submit" value="Area" class="dropbtn" onclick="myFunction()"/>
+                        <div id="myDropdown" class="dropdown-content">
+                            <select name="areas" size="6" multiple="multiple">
+                                <option disabled="">--Choose Location--</option>
+                                <option value="1">Doha</option>
+                                <option value="2">Rayyan</option>
+                                <option value="3">Al Wakrah</option>
+                                <option value="4">Duhail</option>
+                                <option value="5">Garrafa</option>
+                                <option value="6">Um Selal</option>
+                                <option value="7">Alrayyan</option>
+                                <option value="8">Madinat Khalifa</option>
+                                <option value="9">Alsadd</option>
+                                <option value="10">Old Airport</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </header><!--Header End-->
+            <nav class="navbar">
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="#" style="color: #013069">Categories</a>
+                        <ul>
+                            <li><a href="categories-html/medical-care.html">Medical Care</a></li>
+                            <li><a href="categories-html/heart.html">Heart</a></li>
+                            <li><a href="categories-html/Obstetrics.html">Obstetrics</a></li>
+                            <li><a href="categories-html/Pediatrics.html">Pediatrics</a></li>
+                            <li><a href="categories-html/beauty.html">Beauty Centers</a></li>
+                            <li><a href="categories-html/dentist.html">Dentist</a></li>
+                            <li><a href="categories-html/dermatology.html">Dermatology</a></li>
+                            <li><a href="categories-html/Opthalmology.html">Opthalmology</a></li>
+                            <li><a href="categories-html/massage.html">Massage Center</a></li>
+                            <li><a href="categories-html/Physiotherapy.html">Physiotherapy</a></li>
+                            <li><a href="categories-html/weight-loss.html">Weight Loss</a></li>
+                            <li><a href="categories-html/Special-Needs">Special Needs</a></li>
+                            <li><a href="categories-html/Veterinary.html">Veterinary</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="About.html">About Us</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <li><a  href="help.html">Help</a></li>
+                </ul>
+            </nav><!--Navigation bar End-->
+            <div class="clnk">
+                <div class="clnk-info hour"><p>Opening Hours</p></div>
+                <div class="clnk-info map"><p>Location</p></div>
+                <div class="clnk-info call"><p>Give us a call</p></div>
+                <div class="clnk-info message"><p>Send a message</p></div>
+                <div class="appoinment-btn">
+                    <input type="submit" value="Request Appointment" name="req-apointmnt" />
+                </div>
+            </div>
+            <hr />
+            <div class="mobile-appointment">
+                <input type="submit" value="Request Appointment" name="req-apointmnt" />
+            </div>
+
+            <!--<div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/away-3024773_960_720.jpg" alt="" style="width:100%"/>
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/nature_call.jpg" alt="" style="width:100%"/>
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/pexels-photo-459225.jpeg" alt="" style="width:100%"/>
+                    <div class="text">Caption Three</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>-->
+            <div>
+                <h1>We Offer You</h1>
+            </div>
+
+            <div>
+                <h1>Here We Are</h1>
+            </div>
+            <div id="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7216.836919856423!2d51.52038563231429!3d25.256504983868613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45cffa1b772ce9%3A0xdf5b1302a9cea18a!2sGulf+Dental+Center+Al+Hilal!5e0!3m2!1sen!2sqa!4v1526729286634" 
+                    width="600" height="450" frameborder="0" style="width:100%;height:400px;background:yellow">
+
+                </iframe>
+            </div>
+            <hr />
+            <div>
+                <h1>Our Team</h1>   
+            </div>
+            <div class="doctor-pic">
+                <ul>
+                    <li>
+                        <img src="resources/images/insurance/diseno-de-fondo-de-doctora_1270-62.jpg" alt="doctor-img"/>
+                        <span><br />Dr.Mona<br />Dentist</span>
+                    </li>
+                    <li>
+                        <img src="resources/images/insurance/diseno-de-fondo-de-doctora_1270-62.jpg" alt="doctor-img"/>
+                        <span id="docName" ><br /><br /></span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>We Accept</h1>
+            </div>
+            <div class="insurance">
+                <ul>
+                    <li><img src="resources/images/insurance/axa.jpg" alt="axa"/></li>
+                    <li><img src="resources/images/insurance/next-care.png" alt="next-care"/></li>
+                    <li><img src="resources/images/insurance/health360.png" alt="health360"/> </li>
+                    <li><img src="resources/images/insurance/doha-bank.png" alt="doha-bank"/></li>
+                </ul>
+            </div>
+            <footer>
+                This is my footer ... copy rights reserved 2018
+            </footer>
+        </wrapper>
+
+        <script>
+
+            function doctor(docName) {
+            var dName = prompt("Enter Doctor Name: ");
+                if (dName &ne; null) {
+                    document.getElementById("docName").innerHTML = "Dr. " + dName;
+                } else {
+                    alert("No Doctor Name Entered...");
+                }
+            }
+            doctor();
+
+        </script>
+
+
+    </h:body>
+</html>
+

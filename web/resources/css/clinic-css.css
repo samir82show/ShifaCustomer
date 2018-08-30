@@ -1,0 +1,288 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2018, 11:41:25 AM
+    Author     : Nooshi
+*/
+.navbar{
+    margin-bottom: 0;
+}
+.clnk{
+    width: 100%;
+    overflow: hidden;
+    font-size: 17px;
+    margin-bottom: 5px;
+    display:inline-block;
+    font-size: 20px;
+    color: #013069;
+
+    background-color: #ffcccc;
+}
+
+.clnk-info{
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 3px 2px;
+    float: left;
+    border-right: 1px solid #A7A7A7;
+    background-color: #ccffcc;
+    display: block;
+    text-align: center;
+}
+.clnk-info p{
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.clnk-info::before{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.clnk-info.hour::before {
+    content: url(../images/clock-circular-outline.png);
+}
+.clnk-info.map::before {
+    content: url(../images/maps-and-flags.png);
+}
+.clnk-info.call::before {
+    content: url(../images/telephone-handle-silhouette.png);
+}
+.clnk-info.message::before {
+    content: url(../images/telephone-handle-silhouette.png);
+}
+.clnk-info:hover:before{
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.appoinment-btn{
+    height: 120px;
+}
+.appoinment-btn input[type='submit']{
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    background-color: #9C70A5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    margin: 33px 12px;
+    padding: 15px;
+    border-radius: 40px;
+    /*::before{   */
+        /*opacity: 0.8;*/
+    /*}*/
+
+}
+.appoinment-btn input:hover::after{
+    opacity: 1.0;
+}
+/**Map*/
+#map{
+    width:100%;
+    height:400px;
+    background:yellow;
+}
+/**Doctor div*/
+.doctor-pic{
+    margin-bottom: 15px;
+}
+.doctor-pic ul{
+    padding: 0 10px;
+}
+.doctor-pic ul li{
+    height: auto;
+    display:inline-block;
+    padding: 8px;
+    margin: 0 8px;
+    font-size: 17px;
+    line-height: 30px;
+    vertical-align: top;
+    text-align: left;
+}
+.doctor-pic ul li img{
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/**Insurance div*/
+.insurance{
+    margin-bottom: 15px;
+    height: auto;
+}
+.insurance ul{
+    text-align: center;
+    padding: 0 10px;
+}
+.insurance ul li{
+    display: inline-block;
+    padding: 10px;
+}
+/**Insurance Images*/
+.insurance ul li img{
+    max-width: 200px ;
+    height: 80px ;
+}
+/**Media Query------------------------------------------------*/
+@media screen and (max-width:600px){
+    .clnk{
+        display: block;
+        font-size: 17px;
+        background-color: #ffcccc;
+        margin-bottom: 15px;
+    }
+    .clnk-info{
+        width: 30%;
+        height: auto;
+    }
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.mobile-appointment{
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+.mobile-appointment input{
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    background-color: #9C70A5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 12px;
+    padding: 15px 50px;
+    border-radius: 40px;
+}
+/* On smaller screens, decrease text size */
+.doctor-pic ul{
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .clnk-info p {
+        font-size: 15px;
+    }
+    .appoinment-btn input[type='submit'] {
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .appoinment-btn{
+        display: none;
+    }
+    .mobile-appointment{
+        display: block;
+    }
+    .clnk-info {
+        float: none;
+        display: inline-block;
+        text-align: center;
+    }
+    .clnk{
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .clnk-info {
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}

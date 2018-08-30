@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="Normalize.css"/>
+        <h:outputStylesheet library="css" name="indexcss.css"/>
+        <h:outputStylesheet library="css" name="clinics-categories.css"/>
+    </h:head>
+    <h:body>
+
+        <header class="header-top">
+            <div class="menu-icon">
+                <a href="../index.html"><img src="../resources/images/insurance/menu.png"  alt=""/></a>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../resources/images/insurance/dark-logo-for-site.png" alt="Logo image"/></a>
+            </div>
+
+            <div class="search-box">
+                <form class="form-style">
+                    <input type="text" placeholder="Search by name or service" name="search"/>
+                        <input type="submit" value="Area" class="dropbtn" onclick="myFunction()"/>
+                        <div id="myDropdown" class="dropdown-content">
+                            <select name="areas" size="6" multiple="multiple">
+                                <option disabled="">--Choose Location--</option>
+                                <option value="1">Doha</option>
+                                <option value="2">Rayyan</option>
+                                <option value="3">Al Wakrah</option>
+                                <option value="4">Duhail</option>
+                                <option value="5">Garrafa</option>
+                                <option value="6">Um Selal</option>
+                                <option value="7">Alrayyan</option>
+                                <option value="8">Madinat Khalifa</option>
+                                <option value="9">Alsadd</option>
+                                <option value="10">Old Airport</option>
+                            </select>
+                        </div>
+                </form>
+            </div>
+        </header><!--Header End-->
+        <nav class="navbar">
+            <ul>
+                <li><a  href="../index.html">Home</a></li>
+                <li><a href="#" style="color: #013069">Categories</a>
+                    <ul>
+                        <li><a href="../categories-html/medical-care.html">Medical Care</a></li>
+                        <li><a href="../categories-html/heart.html">Heart</a></li>
+                        <li><a href="../categories-html/Obstetrics.html">Obstetrics</a></li>
+                        <li><a href="../categories-html/Pediatrics.html">Pediatrics</a></li>
+                        <li><a href="../categories-html/beauty.html">Beauty Centers</a></li>
+                        <li><a href="../categories-html/dentist.html">Dentist</a></li>
+                        <li><a href="../categories-html/dermatology.html">Dermatology</a></li>
+                        <li><a href="../categories-html/Opthalmology.html">Opthalmology</a></li>
+                        <li><a href="../categories-html/massage.html">Massage Center</a></li>
+                        <li><a href="../categories-html/Physiotherapy.html">Physiotherapy</a></li>
+                        <li><a href="../categories-html/weight-loss.html">Weight Loss</a></li>
+                        <li><a href="../categories-html/Special-Needs">Special Needs</a></li>
+                        <li><a href="../categories-html/Veterinary.html">Veterinary</a></li>
+                    </ul>
+                </li>
+                <li><a  href="../About.html">About Us</a></li>
+                <li><a  href="../contact.html">Contact</a></li>
+                <li><a  href="../help.html">Help</a></li>
+            </ul>
+        </nav><!--Navigation bar End-->
+        <div class="container">
+            <h2>Obstetrics Centers</h2>
+            <div class="clnk-div">
+                <a href="#">
+                    <img src="../resources/images/insurance/images.jpg" alt=""/>
+                    <span><br />Name<br />Location</span>
+                </a>
+            </div>
+            <div class="clnk-div">
+                <a href="#">
+                    <img src="../resources/images/insurance/info_medical01.jpg" alt=""/>
+                    <span><br />Name<br />Location</span>
+                </a>
+            </div>
+        </div><!--Container div end-->
+        <footer>
+            © 2018 .com. All rights reserved.
+        </footer>
+
+
+    </h:body>
+</html>
+
